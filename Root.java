@@ -1,0 +1,43 @@
+import java.util.*;
+ 
+public class Root
+{
+public static void main (String[] args)
+            {
+            Scanner in = new Scanner (System.in);
+ 
+            System.out.println ("ax^2+bx+c=0");
+           
+            System.out.println ("Enter a");
+            int a = in.nextInt();
+           
+            System.out.println ("Enter b");
+            int b = in.nextInt();
+           
+            System.out.println ("Enter c");
+            int c = in.nextInt();
+ 
+            double d = Math.pow(b,2)-4*a*c;
+            double x1,x2;
+           
+            if (d>0) {
+                        //System.out.println ("+");
+                       
+                        x1 = (-1*b+Math.sqrt(Math.pow(b,2)-4*a*c))/2*a;
+                        x2 = (-1*b-Math.sqrt(Math.pow(b,2)-4*a*c))/2*a;
+                        //System.out.println ("x1= "+ x1+"; x2= ""+ x2);
+                        System.out.println (x1);
+                        System.out.println (x2);
+            }
+           
+            else if (d==0){
+                        x1=(-1*(b/2*a));
+                        x2 = x1;
+                        System.out.println (x1);
+                        System.out.println (x2);
+                        }
+            else
+                        {System.out.println ("Fuck off");}
+            System.out.println (d);
+            }
+}
